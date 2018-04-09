@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -8,21 +8,57 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: rgb(23, 162, 184);
   padding: 20px;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 1.75em;
+  text-align: center;
+  font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .App-intro {
   font-size: large;
+  text-align: center;
+}
+.App-form{
+  margin: 10px;
+}
+.App-form input{
+  max-width: 400px;
+}
+.App-form .form-group{
+ float: left;
+ margin-right: 10px;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.dateBlock{
+    position: "relative";
+    width:  30px;
+    height: 30px;
+    color:"skyblue";
+    float: left;
+    text-align: center;
+    border: 1px dotted #ffffff;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.card-body{
+    background: #efefef;
+    border-radius: 3px;
+}
+.card-text{
+  margin: 0 auto;
+  width: 210px;
+}
+.lclear{
+  clear: left;
+}
+

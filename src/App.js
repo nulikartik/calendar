@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './Components/DateBlock.js';
+import CalendarGroup from './Components/CalendarGroup.js';
+import Form from './Components/Form.js';
 
 class App extends Component {
   render() {
+    const style = {
+      width:  30  + 'px',
+      height: 30 + 'px',
+      color:"blue",
+      backgroundColor: "black"
+  };
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title container">Custom Calendar</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <Form />
+      </div>  
+        
     );
   }
 }
