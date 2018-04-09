@@ -1,7 +1,8 @@
 Please follow the simple instructions below to see the webpage:
 1.Open command prompt
 2.Move to this directory in cmd
-3.Type 'npm start'
+3.Type 'npm install'
+4.Type 'npm start'
 
 Usage:
 1.You need to select the date from the date picker
