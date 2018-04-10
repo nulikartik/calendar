@@ -28,7 +28,7 @@ class CalendarGroup extends Component{
         console.log("Range: ",range);
         console.log("fromMOnth",fromMonth);
         if(sum >= endDate){console.log("DaUpdated",date);
-            cal.push(<CalendarBlock countryCode={countryCode} startDate={startDate} toDate={endDate} range={range} day={date.getDay()} month={months[fromMonth]+" - "+year} getMonth={fromMonth} />);
+            cal.push(<CalendarBlock countryCode={countryCode} startDate={startDate+1} toDate={endDate} range={range} day={date.getDay()} month={months[fromMonth]+" - "+year} getMonth={fromMonth} />);
             range -= endDate - startDate;
             date.setDate(date.getDate() + endDate - startDate);
         }
