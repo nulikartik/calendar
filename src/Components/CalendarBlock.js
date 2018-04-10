@@ -31,13 +31,6 @@ class CalendarBlock extends Component{
         calBlock.push(<DateBlock date={"S"} color={"orange"}/>);
         calBlock.push(<br className='lclear' />);
         var count = 0;console.log("From date:",fromDate);
-        if(day != 0){
-            for(var j=0;j<day;j++){
-                calBlock.push(<DateBlock date={" "} color={"#696969"}/>);count++;
-            }
-            
-            
-        }
         const currentMonth = holidays[getMonth];
         for(var i=1; i<=endDate; i++){
             if(count == 7){
