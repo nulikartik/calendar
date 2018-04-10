@@ -18,12 +18,10 @@ class Form extends Component{
     }
 
     handleDateChange(event){
-        console.log("hit change");
         this.setState({date: event.target.value});
     }
 
     submitForm(event){
-        console.log("hit submit ",this.state.date);
         var updateCal = [<CalendarGroup date={this.state.date} range={this.state.range} countryCode={this.state.countryCode} />]
         this.setState({formCal : updateCal});
         event.preventDefault();
@@ -53,7 +51,7 @@ class Form extends Component{
                         <div class="form-group">
                             <label>
                                 Enter Number of Days(Range): </label>
-                                <input required type="number" min="1" value={this.state.range}  className="form-control" onChange={this.handleRangeChange} />
+                                <input required type="number" min="1" max="7000" value={this.state.range}  className="form-control" onChange={this.handleRangeChange} />
                         
                         </div>
                         <div class="form-group">
